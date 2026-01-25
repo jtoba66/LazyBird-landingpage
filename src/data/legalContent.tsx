@@ -19,8 +19,8 @@ export const legalContent = {
                 <h3 className="text-white font-bold text-lg mt-6">2. Cloud Processing (Studio)</h3>
                 <p>
                     LazyBird Studio utilizes powerful cloud servers to transcode and optimize your media.
-                    Files are temporarily processed on our infrastructure before being distributed via the Jackal Protocol.
-                    We prioritize efficiency and performance over local constraints.
+                    Files are temporarily processed on our infrastructure before being distributed via the Jackal Protocol for storage only.
+                    Your passwords and private keys are secured via client-side encryption and are never disclosed to our servers.
                 </p>
 
                 <h3 className="text-white font-bold text-lg mt-6">3. Decentralized Storage</h3>
