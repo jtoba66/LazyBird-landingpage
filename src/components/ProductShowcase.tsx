@@ -285,7 +285,7 @@ const NestAnimation = React.memo(() => (
                         scale: [1 - (i * 0.05), 1 - (i * 0.05) + 0.02, 1 - (i * 0.05)],
                     }}
                     transition={{
-                        duration: 4,
+                        duration: 6, // Slower (was 4)
                         repeat: Infinity,
                         delay: i * 0.2,
                         ease: "easeInOut"
@@ -300,8 +300,8 @@ const NestAnimation = React.memo(() => (
                 key={`in-file-${i}`}
                 className="absolute z-20 flex items-center justify-center"
                 initial={{
-                    x: i % 2 === 0 ? -120 : 120, // Reduced from 200 for mobile
-                    y: Math.random() * 200 - 300,
+                    x: i % 2 === 0 ? -120 : 120, // Mobile reduced range
+                    y: Math.random() * 150 - 200, // Reduced from 300 to -200 to avoid top overlap
                     scale: 0.5,
                     opacity: 0
                 }}
@@ -312,9 +312,9 @@ const NestAnimation = React.memo(() => (
                     opacity: [0, 1, 0]
                 }}
                 transition={{
-                    duration: 2 + Math.random() * 1.5,
+                    duration: 3 + Math.random() * 2, // Slower (was 2 + 1.5)
                     repeat: Infinity,
-                    delay: Math.random() * 4,
+                    delay: Math.random() * 5, // More random delay
                     ease: "circIn"
                 }}
             >
@@ -339,15 +339,15 @@ const NestAnimation = React.memo(() => (
                     opacity: 1
                 }}
                 animate={{
-                    x: (Math.random() - 0.5) * 200, // Reduced from 400
-                    y: 100, // Shortened travel to preventing overlapping
+                    x: (Math.random() - 0.5) * 200,
+                    y: 100, // Keep short travel
                     scale: 1.5,
-                    opacity: [1, 0] // Fade out completely by end
+                    opacity: [1, 0]
                 }}
                 transition={{
-                    duration: 2.5 + Math.random() * 2,
+                    duration: 4 + Math.random() * 2, // Much slower (was 2.5)
                     repeat: Infinity,
-                    delay: Math.random() * 4,
+                    delay: Math.random() * 5,
                     ease: "circOut"
                 }}
             >
