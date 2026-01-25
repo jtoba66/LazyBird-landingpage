@@ -11,11 +11,11 @@ function App() {
     <div className="antialiased bg-[#050505] min-h-screen text-white selection:bg-blue-500/30 relative">
       <FluidBackground />
       <div className="relative z-10">
-        {/* Top Left Logo */}
-        <div className="absolute top-6 left-6 z-50 flex items-center gap-3">
-          <img src="/src/assets/logo.png" alt="LazyBird Logo" className="w-10 h-10 object-contain" />
-          <span className="font-bold text-xl tracking-tight hidden md:block">LazyBird</span>
+        {/* Fixed Logo Top Left */}
+        <div className="fixed top-6 left-6 z-50 mix-blend-difference pointer-events-none">
+          <img src="/logo.png" alt="LazyBird" className="w-10 h-10 object-contain hover:opacity-80 transition-opacity" />
         </div>
+        <span className="font-bold text-xl tracking-tight hidden md:block">LazyBird</span>
         <HeroSection />
         <ProductShowcase />
         <StudioDetailedSection />

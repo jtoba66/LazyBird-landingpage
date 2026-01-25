@@ -22,7 +22,7 @@ const PageFooter = () => {
                 {/* Brand */}
                 <div className="col-span-1 md:col-span-2 space-y-6">
                     <div className="flex items-center gap-3">
-                        <img src="/src/assets/logo.png" alt="LazyBird Logo" className="w-8 h-8 object-contain" />
+                        <img src="/logo.png" alt="LazyBird Logo" className="w-8 h-8 object-contain" />
                         <h2 className="text-2xl font-bold text-white tracking-tight">LazyBird</h2>
                     </div>
                     <div className="h-1 w-8 bg-white/20 rounded-full mt-2" />

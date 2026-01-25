@@ -18,7 +18,7 @@ const HeroSection = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-8 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
-                        <img src="/src/assets/logo.png" alt="LazyBird Logo" className="w-5 h-5 object-contain" />
+                        <img src="/logo.png" alt="LazyBird Logo" className="w-5 h-5 object-contain" />
                         <span className="text-sm font-medium text-gray-200 tracking-wide">LazyBird  <span className="opacity-50 mx-2">|</span>  The Creator Suite</span>
                     </div>
 
