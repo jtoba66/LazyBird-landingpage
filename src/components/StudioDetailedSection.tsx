@@ -76,7 +76,7 @@ const StudioDetailedSection = () => {
                     </div>
 
                     {/* Right Column: Gravity Processor */}
-                    <div className="relative h-[600px] flex items-center justify-center perspective-1000">
+                    <div className="relative h-[400px] lg:h-[600px] flex items-center justify-center perspective-1000 scale-50 md:scale-75 lg:scale-100 -my-20 lg:my-0">
 
                         {/* Central Core */}
                         <motion.div

@@ -44,7 +44,7 @@ const ProductShowcase = () => {
             {products.map((product, index) => (
                 <div
                     key={product.id}
-                    className="h-screen w-full flex items-center justify-center relative"
+                    className="min-h-screen py-20 w-full flex items-center justify-center relative"
                     style={{ scrollSnapAlign: 'start', scrollSnapStop: 'always' }}
                 >
                     <div className="max-w-7xl mx-auto w-full px-4">

@@ -22,7 +22,7 @@ const HeroSection = () => {
                         <span className="text-sm font-medium text-gray-200 tracking-wide">LazyBird  <span className="opacity-50 mx-2">|</span>  The Creator Suite</span>
                     </div>
 
-                    <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/50 font-display">
+                    <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold tracking-tighter mb-8 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/50 font-display">
                         Simply <br className="hidden md:block" />
                         <span className="bg-gradient-to-r from-gray-200 to-gray-500 bg-clip-text text-transparent">powerful.</span>
                     </h1>
