@@ -44,11 +44,11 @@ const ProductShowcase = () => {
             {products.map((product, index) => (
                 <div
                     key={product.id}
-                    className="min-h-screen py-20 w-full flex items-center justify-center relative"
+                    className="min-h-screen lg:h-screen py-32 lg:py-0 w-full flex items-center justify-center relative"
                     style={{ scrollSnapAlign: 'start', scrollSnapStop: 'always' }}
                 >
                     <div className="max-w-7xl mx-auto w-full px-4">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
 
                             {/* Left: Product Info */}
                             <motion.div
@@ -140,7 +140,7 @@ const StudioAnimation = React.memo(() => (
         <div className="absolute inset-0 bg-white/5 blur-[120px] rounded-full animate-pulse-slow"></div>
 
         {/* Central Composer Window */}
-        <div className="relative z-10 w-[420px] h-[280px] bg-[#0A0A0A] border border-white/10 rounded-xl overflow-hidden shadow-2xl flex flex-col backdrop-blur-md">
+        <div className="relative z-10 w-[300px] h-[200px] md:w-[420px] md:h-[280px] bg-[#0A0A0A] border border-white/10 rounded-xl overflow-hidden shadow-2xl flex flex-col backdrop-blur-md">
             {/* Window Header */}
             <div className="h-8 border-b border-white/10 flex items-center px-4 gap-2 bg-white/5">
                 <div className="flex gap-1.5">

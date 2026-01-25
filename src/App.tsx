@@ -8,7 +8,7 @@ import FluidBackground from './components/FluidBackground';
 
 function App() {
   return (
-    <div className="antialiased bg-[#050505] min-h-screen text-white selection:bg-blue-500/30 relative">
+    <div className="antialiased bg-[#050505] min-h-screen text-white selection:bg-blue-500/30 relative overflow-hidden">
       <FluidBackground />
       <div className="relative z-10">
         {/* Fixed Logo Top Left */}
