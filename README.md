@@ -1,73 +1,75 @@
-# React + TypeScript + Vite
+# LazyBird
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <img src="public/logo.png" alt="LazyBird Logo" width="120" />
+  <h1>Simply powerful.</h1>
+  <p><strong>The complete suite to create, distribute, and protect your digital assets.</strong></p>
+</div>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+LazyBird is a comprehensive toolkit designed for the modern creator economy and the decentralized web. We bridge the gap between complex Web3 technologies and seamless user experience, offering a suite of products that handle everything from video transcoding to private, permanent storage.
 
-## React Compiler
+## 🚀 The Suite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. LazyBird Studio
+**Professional Cloud-Based Transcoding & Optimization**
 
-## Expanding the ESLint configuration
+Studio is a powerful media processing engine that lives in the cloud but feels like a desktop app. It allows creators to transcode, optimize, and edit videos without burdening their local hardware.
+*   **Universal Format Support**: Convert between MKV, MOV, MP4, AVI, WEBM, and more.
+*   **Intelligent Optimization**: Compress files with zero perceived quality loss using advanced codecs (H.265/HEVC).
+*   **Cloud Processing**: All heavy lifting is done on our value-optimized infrastructure, saving your battery and CPU.
+*   **Jackal Protocol**: Processed files are distributed via the Jackal Protocol for resilient, decentralized access.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 2. LazyBird Nest
+**Zero-Knowledge Private Storage**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Nest is your digital vault. It is built on a **Host-Proof** architecture, meaning even we (LazyBird) cannot see your files.
+*   **Zero-Knowledge Auth**: We never see your password. We use **Argon2id** for client-side key derivation, sending only a cryptographic hash for authentication.
+*   **Military-Grade Encryption**: Every file is encrypted locally using **XChaCha20-Poly1305** before it ever leaves your device.
+*   **Decentralized**: Encrypted shards are stored across a decentralized network, ensuring no single point of failure and censorship resistance.
+*   **Recovery Kit**: Because we don't hold your keys, we provide a recovery kit. If you lose your password and this kit, your data is mathematically irretrievable—by design.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 3. LazyBird Portal
+**Decentralized Public Gateway**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Portal is the public-facing side of the decentralized web. It makes sharing files as easy as dropping a link.
+*   **Public by Default**: Designed for assets you *want* to share—videos, portfolios, public datasets.
+*   **Web3 Native**: Connect with your wallet to manage uploads.
+*   **Permanent Storage**: Leverages decentralized storage to ensure links stay alive without reliable on centralized hosting providers.
+
+---
+
+## 🛠️ Stack
+
+This landing page is built with:
+*   **React** + **Vite** (Fast, modern frontend tooling)
+*   **TailwindCSS** (Utility-first styling)
+*   **Framer Motion** (Complex animations and gestures)
+*   **Phosphor Icons** (Consistent iconography)
+
+## 💻 Development
+
+Clone the project and install dependencies:
+
+```bash
+git clone https://github.com/jtoba66/LazyBird-landingpage.git
+cd lazybird-landing
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Start the development server:
+```bash
+npm run dev
 ```
+
+Build for production:
+```bash
+npm run build
+```
+
+## 📄 License & Legal
+
+All rights reserved. See `src/data/legalContent.tsx` for full Terms of Service and Privacy Policy details.
+
+**Contact**: `admin@lazybird.io`
