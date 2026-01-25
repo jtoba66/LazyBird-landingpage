@@ -269,7 +269,7 @@ const PortalAnimation = React.memo(() => (
 ));
 
 const NestAnimation = React.memo(() => (
-    <div className="relative w-full h-full flex items-center justify-center perspective-[1000px]">
+    <div className="relative w-full h-full flex items-center justify-center perspective-[1000px] overflow-hidden">
         {/* Dynamic Matrix Background */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:30px_30px] [mask-image:radial-gradient(circle_at_center,black_40%,transparent_70%)]" />
 
@@ -340,7 +340,7 @@ const NestAnimation = React.memo(() => (
                 }}
                 animate={{
                     x: (Math.random() - 0.5) * 200, // Reduced from 400
-                    y: 200, // Reduced from 400
+                    y: 120, // Reduced from 200 for mobile clip
                     scale: 1.5,
                     opacity: [1, 0]
                 }}
