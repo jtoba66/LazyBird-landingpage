@@ -44,11 +44,11 @@ const ProductShowcase = () => {
             {products.map((product, index) => (
                 <div
                     key={product.id}
-                    className="min-h-screen lg:h-screen py-32 lg:py-0 w-full flex items-center justify-center relative"
+                    className="min-h-[80vh] lg:min-h-screen py-16 lg:py-0 w-full flex items-center justify-center relative"
                     style={{ scrollSnapAlign: 'start', scrollSnapStop: 'always' }}
                 >
                     <div className="max-w-7xl mx-auto w-full px-4">
-                        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+                        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 items-center">
 
                             {/* Left: Product Info */}
                             <motion.div
@@ -106,7 +106,7 @@ const ProductShowcase = () => {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6, delay: 0.2 }}
-                                className="h-[450px] flex items-center justify-center"
+                                className="h-[300px] md:h-[450px] flex items-center justify-center"
                             >
                                 {product.animation}
                             </motion.div>
