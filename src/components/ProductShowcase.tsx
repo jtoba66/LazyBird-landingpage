@@ -278,7 +278,7 @@ const NestAnimation = React.memo(() => (
             {[...Array(6)].map((_, i) => (
                 <motion.div
                     key={`stack-${i}`}
-                    className="absolute w-48 h-64 rounded-xl border border-white/20 bg-white/5 backdrop-blur-xl shadow-[0_0_30px_rgba(255,255,255,0.05)] flex items-center justify-center"
+                    className="absolute w-32 h-40 md:w-48 md:h-64 rounded-xl border border-white/20 bg-white/5 backdrop-blur-xl shadow-[0_0_30px_rgba(255,255,255,0.05)] flex items-center justify-center"
                     style={{ zIndex: 10 - i }}
                     animate={{
                         y: [-20, 20, -20],
@@ -300,7 +300,7 @@ const NestAnimation = React.memo(() => (
                 key={`in-file-${i}`}
                 className="absolute z-20 flex items-center justify-center"
                 initial={{
-                    x: i % 2 === 0 ? -400 : 400,
+                    x: i % 2 === 0 ? -200 : 200, // Reduced from 400 for mobile safety
                     y: Math.random() * 200 - 300,
                     scale: 0.5,
                     opacity: 0
@@ -339,8 +339,8 @@ const NestAnimation = React.memo(() => (
                     opacity: 1
                 }}
                 animate={{
-                    x: (Math.random() - 0.5) * 400,
-                    y: 400,
+                    x: (Math.random() - 0.5) * 200, // Reduced from 400
+                    y: 200, // Reduced from 400
                     scale: 1.5,
                     opacity: [1, 0]
                 }}
