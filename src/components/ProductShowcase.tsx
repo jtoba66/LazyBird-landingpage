@@ -269,12 +269,12 @@ const PortalAnimation = React.memo(() => (
 ));
 
 const NestAnimation = React.memo(() => (
-    <div className="relative w-full h-full flex items-center justify-center perspective-[1000px]" style={{ maskImage: 'radial-gradient(circle at center, black 40%, transparent 70%)', WebkitMaskImage: 'radial-gradient(circle at center, black 40%, transparent 70%)' }}>
+    <div className="relative w-full h-full flex items-center justify-center perspective-[1000px]">
         {/* Dynamic Matrix Background */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:30px_30px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:30px_30px] [mask-image:radial-gradient(circle_at_center,black_40%,transparent_70%)]" />
 
         {/* The Central High-Speed Stack */}
-        <div className="relative z-10 flex items-center justify-center transform-style-3d rotate-x-60">
+        <div className="relative z-10 flex items-center justify-center transform-style-3d rotate-x-12 md:rotate-x-60 transition-transform duration-700">
             {[...Array(6)].map((_, i) => (
                 <motion.div
                     key={`stack-${i}`}
