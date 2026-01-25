@@ -278,7 +278,7 @@ const NestAnimation = React.memo(() => (
             {[...Array(6)].map((_, i) => (
                 <motion.div
                     key={`stack-${i}`}
-                    className="absolute w-32 h-40 md:w-48 md:h-64 rounded-xl border border-white/20 bg-white/5 backdrop-blur-xl shadow-[0_0_30px_rgba(255,255,255,0.05)] flex items-center justify-center"
+                    className="absolute w-24 h-32 md:w-48 md:h-64 rounded-xl border border-white/20 bg-white/5 backdrop-blur-xl shadow-[0_0_30px_rgba(255,255,255,0.05)] flex items-center justify-center"
                     style={{ zIndex: 10 - i }}
                     animate={{
                         y: [-20, 20, -20],
@@ -300,7 +300,7 @@ const NestAnimation = React.memo(() => (
                 key={`in-file-${i}`}
                 className="absolute z-20 flex items-center justify-center"
                 initial={{
-                    x: i % 2 === 0 ? -200 : 200, // Reduced from 400 for mobile safety
+                    x: i % 2 === 0 ? -120 : 120, // Reduced from 200 for mobile
                     y: Math.random() * 200 - 300,
                     scale: 0.5,
                     opacity: 0
@@ -318,8 +318,8 @@ const NestAnimation = React.memo(() => (
                     ease: "circIn"
                 }}
             >
-                <div className="w-8 h-10 bg-white shadow-[0_0_15px_white] rounded flex items-center justify-center">
-                    <FileCloud weight="fill" className="text-black/50 w-5 h-5" />
+                <div className="w-6 h-8 md:w-8 md:h-10 bg-white shadow-[0_0_15px_white] rounded flex items-center justify-center">
+                    <FileCloud weight="fill" className="text-black/50 w-4 h-4 md:w-5 md:h-5" />
                 </div>
                 <div className="absolute w-20 h-[1px] bg-gradient-to-r from-transparent via-white/50 to-transparent transform rotate-180"
                     style={{ right: i % 2 === 0 ? 'auto' : '100%', left: i % 2 === 0 ? '100%' : 'auto' }}
@@ -351,8 +351,8 @@ const NestAnimation = React.memo(() => (
                     ease: "circOut"
                 }}
             >
-                <div className="w-8 h-10 bg-white/20 border border-white/50 backdrop-blur-md rounded flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-                    <CheckCircle weight="bold" className="text-white w-5 h-5" />
+                <div className="w-6 h-8 md:w-8 md:h-10 bg-white/20 border border-white/50 backdrop-blur-md rounded flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+                    <CheckCircle weight="bold" className="text-white w-4 h-4 md:w-5 md:h-5" />
                 </div>
                 <div className="absolute w-20 h-[1px] bg-gradient-to-b from-white/50 to-transparent top-full" />
             </motion.div>
