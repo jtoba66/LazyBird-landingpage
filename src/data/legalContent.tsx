@@ -60,6 +60,13 @@ export const legalContent = {
                     You agree not to use the Service specifically to host illegal content, malware,
                     or content that infringes on intellectual property rights.
                 </p>
+
+                <h3 className="text-white font-bold text-lg mt-6">4. Payments & Refunds</h3>
+                <p>
+                    Payments for premium services (LazyBird Studio and Nest) are securely processed via Stripe.
+                    We are committed to satisfaction and offer refunds for these services if requested within 14 days of purchase.
+                    Please contact admin@lazybird.io to initiate a refund request.
+                </p>
             </div>
         )
     },
