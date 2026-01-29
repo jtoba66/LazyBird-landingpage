@@ -33,7 +33,13 @@ const HeroSection = () => {
 
                     <div className="flex items-center justify-center gap-4">
                         <button
-                            onClick={() => document.getElementById('suite-showcase')?.scrollIntoView({ behavior: 'smooth' })}
+                            onClick={() => {
+                                (window as any).gtag?.('event', 'explore_suite_click', {
+                                    'event_category': 'engagement',
+                                    'event_label': 'hero_button'
+                                });
+                                document.getElementById('suite-showcase')?.scrollIntoView({ behavior: 'smooth' });
+                            }}
                             className="group px-8 py-4 bg-white text-black rounded-full font-bold text-lg hover:bg-gray-200 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]"
                         >
                             Explore the Suite

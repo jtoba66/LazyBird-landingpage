@@ -86,14 +86,26 @@ const ProductShowcase = () => {
                                 {!product.comingSoon ? (
                                     <a
                                         href={product.link}
+                                        onClick={() => {
+                                            (window as any).gtag?.('event', 'launch_app_click', {
+                                                'product_id': product.id,
+                                                'product_title': product.title
+                                            });
+                                        }}
                                         className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-black transition-all shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] bg-white hover:bg-gray-100"
                                     >
                                         Launch App <ArrowRight weight="bold" />
                                     </a>
                                 ) : (
                                     <button
-                                        disabled
-                                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-black transition-all bg-white/50 cursor-not-allowed"
+                                        onClick={() => {
+                                            (window as any).gtag?.('event', 'coming_soon_click', {
+                                                'product_id': product.id,
+                                                'product_title': product.title,
+                                                'location': 'product_showcase'
+                                            });
+                                        }}
+                                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-black transition-all bg-white/50 cursor-pointer"
                                     >
                                         Coming Soon
                                     </button>

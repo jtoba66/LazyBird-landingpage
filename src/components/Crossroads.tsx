@@ -58,8 +58,14 @@ const Crossroads = () => {
                         <div className={`absolute inset-0 bg-white/20 rounded-full blur-2xl transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`} />
 
                         <button
-                            disabled
-                            className="group/btn relative flex items-center gap-4 bg-white/50 text-black pl-8 pr-6 py-5 rounded-full font-bold text-xl cursor-not-allowed"
+                            onClick={() => {
+                                (window as any).gtag?.('event', 'coming_soon_click', {
+                                    'product_id': 'crossroads_cta',
+                                    'product_title': 'Ready to Optimize?',
+                                    'location': 'crossroads_section'
+                                });
+                            }}
+                            className="group/btn relative flex items-center gap-4 bg-white/50 text-black pl-8 pr-6 py-5 rounded-full font-bold text-xl cursor-pointer"
                         >
                             <span className="relative z-10">Coming Soon</span>
                         </button>
