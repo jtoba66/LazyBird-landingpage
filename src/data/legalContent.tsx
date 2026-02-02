@@ -60,9 +60,11 @@ export const legalContent = {
 
                 <h3 className="text-white font-bold text-lg mt-6">2. Decentralized Nature</h3>
                 <p>
-                    You acknowledge that our services interact with decentralized networks (Jackal Protocol).
-                    LazyBird cannot reverse transactions, recover lost private keys, or restore access
-                    to encrypted data if you lose your credentials. You are solely responsible for your wallet security.
+                    You acknowledge that our services interact with decentralized networks (such as Jackal Protocol).
+                    <strong>Jackal Protocol operates through independent storage providers that LazyBird Inc. does not own or control.</strong>{" "}
+                    While we aim for high availability, we cannot guarantee that files stored on decentralized infrastructure will remain accessible indefinitely.
+                    LazyBird cannot reverse transactions, recover lost private keys, or restore access to encrypted data if you lose your credentials.
+                    You are solely responsible for your wallet and account security.
                 </p>
 
                 <h3 className="text-white font-bold text-lg mt-6">3. Payments & Refunds</h3>
@@ -81,6 +83,13 @@ export const legalContent = {
                 <p>
                     <strong>Any dispute arising from the use of Nest will be resolved exclusively through binding arbitration, not in court.</strong>
                     You and LazyBird Inc. agree to waive any right to a jury trial or to participate in a class action lawsuit.
+                </p>
+
+                <h3 className="text-white font-bold text-lg mt-6">6. Access Layer Clarification</h3>
+                <p>
+                    <strong>LazyBird Nest is an access layer and interface to decentralized storage protocols.</strong>{" "}
+                    LazyBird Inc. does not own, operate, or control the underlying storage infrastructure and is not the custodian of user data stored on third-party decentralized networks.
+                    Nest provides file encryption, organization, and gateway services only.
                 </p>
             </div>
         )
