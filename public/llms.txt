@@ -1,0 +1,25 @@
+# LazyBird Suite
+
+> The complete suite to create, distribute, and protect your digital assets. 
+
+LazyBird is a decentralized productivity suite built on the Jackal Protocol and Base L2, designed for privacy, sovereignty, and scale.
+
+## Core Products
+
+- **LazyBird Studio**: A browser-based media processing engine for transcoding (H.265/HEVC), optimization, and video editing without local hardware burden.
+- **LazyBird Nest**: A zero-knowledge private storage vault (Locker) using XChaCha20-Poly1305 client-side encryption.
+- **LazyBird Portal**: A decentralized public gateway for managing and sharing files on the Jackal Protocol.
+
+## Technical Foundations
+
+- **Storage**: Jackal Protocol (Decentralized storage).
+- **Payments**: Base L2 (USDC).
+- **Encryption**: XChaCha20-Poly1305, Argon2id for key derivation.
+- **Privacy**: Host-proof architecture (Zero-Knowledge).
+
+## URLs
+
+- Website: https://lazybird.io
+- Studio: https://studio.lazybird.io
+- Portal: https://portal.lazybird.io
+- Nest: https://nest.lazybird.io

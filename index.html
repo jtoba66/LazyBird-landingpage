@@ -34,10 +34,56 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <title>LazyBird | The Creator Suite</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "LazyBird Suite",
+      "operatingSystem": "All",
+      "applicationCategory": "ProductivityApplication",
+      "description": "The complete suite to create, distribute, and protect your digital assets. Includes LazyBird Studio, Nest, and Portal.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "LazyBird",
+        "url": "https://lazybird.io"
+      }
+    }
+  </script>
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <header style="display:none">
+      <h1>LazyBird</h1>
+      <p>The complete suite to create, distribute, and protect your digital assets.</p>
+    </header>
+    <main style="display:none">
+      <section>
+        <h2>LazyBird Studio</h2>
+        <p>Professional video transcoding and optimization.</p>
+      </section>
+      <section>
+        <h2>LazyBird Nest</h2>
+        <p>Zero-knowledge private storage vault.</p>
+      </section>
+      <section>
+        <h2>LazyBird Portal</h2>
+        <p>Decentralized public gateway and file sharing.</p>
+      </section>
+    </main>
+  </div>
+  <noscript>
+    <div style="padding: 20px; text-align: center; color: white; background: #050505;">
+      <h1>LazyBird</h1>
+      <p>Please enable JavaScript to experience the full LazyBird suite.</p>
+      <p>LazyBird is a decentralized productivity suite for creators, offering secure storage and media processing.</p>
+    </div>
+  </noscript>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 

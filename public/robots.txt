@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Specifically allow AI crawlers to ensure they can index and summarize the site
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Bot
+Allow: /
+
+User-agent: ClaudeWeb
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://lazybird.io/sitemap.xml
